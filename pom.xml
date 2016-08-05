@@ -14,12 +14,12 @@
     <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-server</artifactId>
-        <version>9.4.0.M0</version>
+        <version>9.0.5.v20130815</version>
     </dependency>
     <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-webapp</artifactId>
-        <version>9.4.0.M0</version>
+        <version>9.0.5.v20130815</version>
     </dependency>    
 <!--     <dependency>
         <groupId>org.mortbay.jetty</groupId>
@@ -36,32 +36,32 @@
   </dependencies>
   
   <properties>
-      <JKD_version>1.8</JKD_version>
+      <JKD_version>1.7</JKD_version>
       <file_encoding>UTF-8</file_encoding>
-      <maven_compiler_plugin_version>3.3</maven_compiler_plugin_version>
+      <maven_compiler_plugin_version>3.5.1</maven_compiler_plugin_version>
       <skip_maven_deploy>false</skip_maven_deploy>
       <updateReleaseInfo>true</updateReleaseInfo>
       <project.build.sourceEncoding>${file_encoding}</project.build.sourceEncoding>
   </properties>
   <build>
       <plugins>
-         <!-- <plugin>
+         <plugin>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-maven-plugin</artifactId>
-            <version>9.4.0.M0</version>
+             <version>9.0.5.v20130815</version>
             <configuration>  
                 <scanIntervalSecond>10</scanIntervalSecond>  
                 <webApp>  
-                    <contextPath>/test</contextPath>  
+                    <contextPath>/jetty</contextPath>  
                 </webApp>  
-                <connectors>  
+<!--                 <connectors>  
                     <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">  
                         <port>8787</port>  
                         <maxIdleTime>60000</maxIdleTime>  
                     </connector>  
-                </connectors>  
+                </connectors>  --> 
             </configuration> 
-        </plugin> -->
+        </plugin>
         <!-- 编译插件 -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
